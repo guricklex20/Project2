@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de Interés Compuesto</title>
+</head>
+<body>
+    <h1>Calculadora de Interés Compuesto</h1>
+
+    <form action="/calculate" method="post">
+        <label for="initialInvestment">Inversión inicial:</label>
+        <input type="number" id="initialInvestment" name="initialInvestment" min="1000" required><br><br>
+
+        <label for="annualContribution">Aportación anual:</label>
+        <input type="number" id="annualContribution" name="annualContribution" min="0" required><br><br>
+
+        <label for="annualContributionIncrease">% De incremento a la aportación anual:</label>
+        <input type="number" id="annualContributionIncrease" name="annualContributionIncrease" min="0"><br><br>
+
+        <label for="investmentYears">Años de inversión:</label>
+        <input type="number" id="investmentYears" name="investmentYears" min="1" required><br><br>
+
+        <label for="investmentReturn">Rendimiento de inversión (%):</label>
+        <input type="number" id="investmentReturn" name="investmentReturn" min="1" required><br><br>
+
+        <input type="submit" value="Calcular">
+    </form>
+</body>
+</html>
